@@ -1,30 +1,30 @@
 <p align="center">
-  <img height="100" src="./logo.svg" />
+  <img src="./logo.svg" />
 </p>
 
 <h1 align="center">Network Idle</h1>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/network-idle">
-    <img src="https://img.shields.io/npm/v/network-idle.svg?label=version&color=ff8127" alt="Version">
+    <img src="https://img.shields.io/npm/v/network-idle.svg?label=version&color=D69E2E" alt="Version">
   </a>
   <a href="https://github.com/supremetechnopriest/network-idle/blob/master/LICENSE">
-    <img src="https://img.shields.io/npm/l/network-idle?color=ff7531" alt="License">
+    <img src="https://img.shields.io/npm/l/network-idle?color=D69E2E" alt="License">
   </a>
   <a href="https://www.npmjs.com/package/network-idle">
-    <img src="https://img.shields.io/npm/dt/network-idle.svg?color=ff693b" alt="Downloads">
+    <img src="https://img.shields.io/npm/dt/network-idle.svg?color=D69E2E" alt="Downloads">
   </a>
   <a href="https://github.com/sponsors/supremetechnopriest?logo=github">
-    <img src="https://img.shields.io/github/sponsors/supremetechnopriest?color=ff5c45" alt="GitHub Sponsors">
+    <img src="https://img.shields.io/github/sponsors/supremetechnopriest?color=D69E2E" alt="GitHub Sponsors">
   </a>
   <a href="https://codeclimate.com/github/SupremeTechnopriest/network-idle/test_coverage">
-    <img src="https://img.shields.io/github/workflow/status/SupremeTechnopriest/network-idle/tests?label=tests&color=ff4f50" alt="Tests">
+    <img src="https://img.shields.io/github/workflow/status/SupremeTechnopriest/network-idle/tests?label=tests&color=D69E2E" alt="Tests">
   </a>
   <a href="https://codeclimate.com/github/SupremeTechnopriest/network-idle/test_coverage">
-    <img src="https://img.shields.io/codeclimate/coverage/SupremeTechnopriest/network-idle?color=ff415b"alt="Test Coverage">
+    <img src="https://img.shields.io/codeclimate/coverage/SupremeTechnopriest/network-idle?color=D69E2E"alt="Test Coverage">
   </a>
   <a href="https://codeclimate.com/github/SupremeTechnopriest/network-idle/maintainability">
-    <img src="https://img.shields.io/codeclimate/maintainability/SupremeTechnopriest/network-idle?color=ff3266" alt="Maintainability">
+    <img src="https://img.shields.io/codeclimate/maintainability/SupremeTechnopriest/network-idle?color=D69E2E" alt="Maintainability">
   </a>
 </p>
 

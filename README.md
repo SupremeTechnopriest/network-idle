@@ -1,30 +1,30 @@
-<p align="center" style="margin-bottom: 0">
+<p align="center">
   <img height='100' width='100' src="./logo.svg" />
 </p>
 
-<h1 align="center" style="margin-top: 0">Network Idle</h1>
+<h1 align="center">Network Idle</h1>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/network-idle">
-    <img src="https://img.shields.io/npm/v/network-idle.svg?label=version&color=D69E2E" alt="Version">
+    <img src="https://img.shields.io/npm/v/network-idle.svg?label=version&color=319795" alt="Version">
   </a>
   <a href="https://github.com/supremetechnopriest/network-idle/blob/master/LICENSE">
-    <img src="https://img.shields.io/npm/l/network-idle?color=D69E2E" alt="License">
+    <img src="https://img.shields.io/npm/l/network-idle?color=319795" alt="License">
   </a>
   <a href="https://www.npmjs.com/package/network-idle">
-    <img src="https://img.shields.io/npm/dt/network-idle.svg?color=D69E2E" alt="Downloads">
+    <img src="https://img.shields.io/npm/dt/network-idle.svg?color=319795" alt="Downloads">
   </a>
   <a href="https://github.com/sponsors/supremetechnopriest?logo=github">
-    <img src="https://img.shields.io/github/sponsors/supremetechnopriest?color=D69E2E" alt="GitHub Sponsors">
+    <img src="https://img.shields.io/github/sponsors/supremetechnopriest?color=319795" alt="GitHub Sponsors">
   </a>
   <a href="https://codeclimate.com/github/SupremeTechnopriest/network-idle/test_coverage">
-    <img src="https://img.shields.io/github/workflow/status/SupremeTechnopriest/network-idle/tests?label=tests&color=D69E2E" alt="Tests">
+    <img src="https://img.shields.io/github/workflow/status/SupremeTechnopriest/network-idle/tests?label=tests&color=319795" alt="Tests">
   </a>
   <a href="https://codeclimate.com/github/SupremeTechnopriest/network-idle/test_coverage">
-    <img src="https://img.shields.io/codeclimate/coverage/SupremeTechnopriest/network-idle?color=D69E2E"alt="Test Coverage">
+    <img src="https://img.shields.io/codeclimate/coverage/SupremeTechnopriest/network-idle?color=319795"alt="Test Coverage">
   </a>
   <a href="https://codeclimate.com/github/SupremeTechnopriest/network-idle/maintainability">
-    <img src="https://img.shields.io/codeclimate/maintainability/SupremeTechnopriest/network-idle?color=D69E2E" alt="Maintainability">
+    <img src="https://img.shields.io/codeclimate/maintainability/SupremeTechnopriest/network-idle?color=319795" alt="Maintainability">
   </a>
 </p>
 

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./logo.svg" />
+  <img height='100' width='100' src="./logo.svg" />
 </p>
 
 <h1 align="center">Network Idle</h1>

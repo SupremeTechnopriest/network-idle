@@ -1,0 +1,37 @@
+name: tests
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - '!*'
+    paths:
+      - .github/workflows/*
+      - src/**
+      - '*.json'
+      - '!*.MD'
+  pull_request:
+    paths:
+      - .github/workflows/*
+      - src/**
+      - '*.json'
+      - '!*.MD'
+jobs:
+  test: 
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+        with:
+          node-version: '16'
+      - name: Install Modules
+        run: npm i
+      - name: Build Package
+        run: npm run build
+      - name: Run Tests
+        run: npm t
+      - name: Upload Coverage
+        uses: paambaati/codeclimate-action@v2.7.4
+        env:
+          CC_TEST_REPORTER_ID: 12ee610283e99defd8342591246e2b360c5e2de73392f8929794d69b171dfa0c

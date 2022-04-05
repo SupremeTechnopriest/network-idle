@@ -1,8 +1,8 @@
-<p align="center">
+<p align="center" style="margin-bottom: 0">
   <img height='100' width='100' src="./logo.svg" />
 </p>
 
-<h1 align="center">Network Idle</h1>
+<h1 align="center" style="margin-top: 0">Network Idle</h1>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/network-idle">

@@ -20,8 +20,6 @@ export function requestNetworkIdle (callback: CallbackType, timeout: number, opt
     if (options.filter) {
       entries = entries.filter(entry => !options.filter.includes(entry.name))
     }
-
-    console.log(entries) // ?
     if (entries.length) {
       const instance = instances.get(id)
       if (instance) {

@@ -38,6 +38,32 @@ Detect when the browser has not made a network request within a specified amount
 npm i network-idle
 ```
 
+## Types
+
+### `CallbackType`
+
+```ts
+type CallbackType = () => void
+```
+
+### `IOptions`
+
+```ts
+interface IOptions {
+  filter?: string[]
+}
+```
+
+- **filter**: Sometimes you may want to perform a request in your idle callback. To prevent that request from triggering another callback, add its URL to the filter string array. Works on both `requestNetworkIdle` and `networkIdleCallback`.
+
+```js
+requestNetworkIdle(() => {
+  fetch('https://foo.bar/baz/?qux=corge') // Won't trigger callback again
+}, 1000, { 
+  filter: [ 'https://foo.bar/baz/?qux=corge' ] 
+})
+```
+
 ## API
 
 ### `requestNetworkIdle`
@@ -45,12 +71,13 @@ Calls the `callback` when there has not been a network request in the last `time
 
 #### Signature
 ```ts
-requestNetworkIdle(callback: CallbackType, timeout: number): number
+requestNetworkIdle(callback: CallbackType, timeout: number, options: IOptions = {}): number
 ```
 
 #### Arguments
 - **callback** `() => void`: The function to call when the network is idle.
 - **timeout** `number`: How long there should be no network requests for the browser to be considered idle.
+- **options** `IOptions`: Additional configuration options.
 
 #### Returns
 - **id** `number`: Callback id
@@ -70,12 +97,13 @@ Calls the `callback` when there has not been a network request in the last `time
 
 #### Signature
 ```ts
-networkIdleCallback(callback: CallbackType, timeout: number): number
+networkIdleCallback(callback: CallbackType, timeout: number, options: IOptions = {}): number
 ```
 
 #### Arguments
 - **callback** `() => void`: The function to call when the network is idle.
 - **timeout** `number`: How long there should be no network requests for the browser to be considered idle.
+- **options** `IOptions`: Additional configuration options.
 
 #### Returns
 - **id** `number`: Callback id

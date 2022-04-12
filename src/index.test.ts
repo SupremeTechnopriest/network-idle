@@ -55,6 +55,20 @@ describe('network-idle', () => {
       await sleep(200)
       expect(callback).toHaveBeenCalledTimes(2)
     })
+
+    test('Filters specified urls', async () => {
+      const callback = jest.fn()
+      requestNetworkIdle(callback, 200, { filter: ['https://foo.bar', 'https://baz.qux'] })
+      await sleep(200)
+      expect(callback).toHaveBeenCalledTimes(1)
+      emitter.emit('event', [{ name: 'https://foo.bar' }])
+      emitter.emit('event', [{ name: 'https://baz.qux' }])
+      await sleep(200)
+      expect(callback).toHaveBeenCalledTimes(1)
+      emitter.emit('event', [{ name: 'https://quux.corge' }])
+      await sleep(200)
+      expect(callback).toHaveBeenCalledTimes(2)
+    })
   })
 
   describe('.networkIdleCallback', () => {
@@ -86,6 +100,19 @@ describe('network-idle', () => {
       expect(callback).toHaveBeenCalledTimes(1)
       emitter.emit('event', ['foo', 'bar'])
       await sleep(200)
+      expect(callback).toHaveBeenCalledTimes(1)
+    })
+
+    test('Filters specified urls', async () => {
+      const callback = jest.fn()
+      networkIdleCallback(callback, 200, { filter: ['https://foo.bar', 'https://baz.qux'] })
+      await sleep(100)
+      emitter.emit('event', [{ name: 'https://quux.corge' }])
+      await sleep(100)
+      expect(callback).toHaveBeenCalledTimes(0)
+      emitter.emit('event', [{ name: 'https://foo.bar' }])
+      emitter.emit('event', [{ name: 'https://baz.qux' }])
+      await sleep(100)
       expect(callback).toHaveBeenCalledTimes(1)
     })
   })
